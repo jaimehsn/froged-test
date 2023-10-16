@@ -1,0 +1,105 @@
+.selectorContainer{
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+.selectorContainer #selectorButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: .875rem;
+    box-shadow: inset;
+    text-align: left;
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+    border-color: #d1d5db;
+    background-color: #fff;
+    padding: 0.375rem 0.15rem 0.375rem ;
+    
+}
+
+.selectorContainer #selectorButton:active{
+    border-color: #4f46e5;
+    border-width: 0.15rem;
+    padding: 0.225rem 0.15rem 0.225rem;
+}
+
+.selectorContainer ul{
+    padding: 0;
+    margin:0.225rem 0;
+    border-radius: 0.375rem;
+    max-height: 15rem;
+    overflow: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.selectorContainer li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.225rem 0.15rem 0.225rem;
+    line-height: 1.5rem;
+    font-size: .875rem;
+    text-align: left;
+    border: none;
+    
+}
+
+.selectorContainer li:active,
+.selectorContainer li:hover{
+    color:#fff;
+    background-color: #4f46e5;
+}
+
+.selectorContainer #span-left{
+    display: flex;
+    align-items: center;
+    
+}
+.selectorContainer #span-left span{
+    display: flex;
+    padding-right: 0.5rem;
+}
+.selectorContainer .ul {
+    max-width: 20rem;
+}
+
+.selectorContainer #span-right {
+    display: flex;
+    position: relative;
+    right: 0;
+    padding-right:  0.5rem;
+}
+
+#green-icon{
+    color:lightgreen;
+}
+
+
+.left-icon{
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gray-icon{
+    color:lightgray;
+}
+
+
+.right-icon{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-label p{
+    margin: 0;
+}
+
+#text-label-bold{
+    font-weight: bold;
+}

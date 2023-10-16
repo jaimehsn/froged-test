@@ -1,0 +1,30 @@
+<div class="selectorContainer">
+    <button id="selectorButton" (click)="changeListToggle(!listToggle)" (clickOutside)="changeListToggle(false)">
+        <span id="span-left">
+            <span>
+                <mat-icon class="left-icon" [id]="selectedOptionLocal.available ? 'green-icon' : 'gray-icon'">fiber_manual_record</mat-icon>
+            </span>
+            <span>
+                {{selectedOptionLocal.label}}
+            </span>
+        </span>
+        <span id="span-right">
+            <mat-icon class='right-icon' id="gray-icon">unfold_more</mat-icon>
+        </span>
+    </button>
+    <ul *ngIf="listToggle">
+        <li *ngFor="let item of options" (click)="emitSelectedOption(item)">
+            <span id="span-left">
+                <span>
+                    <mat-icon class="left-icon" [id]="item.available ? 'green-icon' : 'gray-icon'">fiber_manual_record</mat-icon>
+                </span>
+                <span class="text-label">
+                    <p [id]="item.value === selectedOptionLocal.value ? 'text-label-bold':''">{{item.label}}</p>
+                </span>
+            </span>
+            <span id="span-right">
+                <mat-icon *ngIf="item.value === selectedOptionLocal.value"  class="right-icon">check</mat-icon>
+            </span>
+        </li>
+    </ul>
+</div>
