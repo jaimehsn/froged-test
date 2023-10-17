@@ -10,7 +10,7 @@ export class UsersService {
     {available:true,value:2,label:'Javier Marín'},
     {available:true,value:3,label:'Lucía Aroca'},
     {available:false,value:5,label:'Daniel Hidalgo'},
-    {available:false,value:6,label:'Jaime Hidalgo'},
+    {available:true,value:6,label:'Jaime Hidalgo'},
     {available:true,value:7,label:'Manuel Martín'},
     {available:false,value:8,label:'Emilio Sosa'},
     {available:true,value:9,label:'Ibai Berengela'},

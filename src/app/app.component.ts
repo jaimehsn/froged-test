@@ -74,12 +74,8 @@ function customValidator(): ValidatorFn {
       if (!value) {
           return null;
       }
-      console.log(value)
-      const isEmpty = regEx.test(value)
 
-      if(isEmpty) {
-        console.log('conatins jaime')
-      }
+      const isEmpty = regEx.test(value)
 
       return !isEmpty ? {incomplete:true}: null;
   }
