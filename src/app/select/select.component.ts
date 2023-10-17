@@ -78,9 +78,8 @@ export class SelectComponent implements OnInit, OnChanges, ControlValueAccessor 
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-
     if(changes['options']){
-      
+      console.log('Cambios', changes['options'].currentValue)
     }
   }
 
