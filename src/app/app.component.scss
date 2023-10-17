@@ -69,3 +69,21 @@
   a:hover {
     color: #125699;
   }
+
+  .toolbar img{
+    border-radius: 50rem;
+  }
+
+  .validation-span {
+    color: #FF0000; 
+    font-size: 14px; 
+    margin-left: 5px; 
+  }
+  
+  
+  .validation-span::before {
+    content: "\2717"; 
+    font-size: 16px; 
+    color: #FF0000; 
+    margin-right: 5px; 
+  }
